@@ -3,7 +3,7 @@
     --preto:#000000;
 --branco:#000000;
 --botao-ativo:#3b3b3b;
---botao-inativo:#f3f3f3;
+--botao-inativo:#fa30b7bb;
 --texto-fundo:#641414;
 }
 body{
@@ -51,5 +51,20 @@ font-family: 'Times New Roman', Times, serif;
 }
 .ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--botao-inativo);
+    border-bottom: 4px solid var(--branco);
+}
+@media screen and (min-width:768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+} {
+    
+}{
+    
 }
